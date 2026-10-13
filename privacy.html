@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Motion Clone Privacy Policy</title>
+<main>
+  <h1>Motion Clone Privacy Policy</h1>
+  <p>Effective date: 14 October 2026. This policy describes Motion Clone 0.2.0 and its optional Android companion when used as a personal app with its local PC runtime.</p>
+  <h2>Information accessed and its purpose</h2>
+  <p>After Google sign-in and consent, Motion Clone accesses account identity information, the calendar list and selected calendar events. With Gmail read permission, it reads message identifiers, metadata, subjects and message text to identify possible events and prepare suggestions. Attachments are skipped. The app stores the connected account information, cached events, captured messages, suggestions, decisions and assistant conversations locally.</p>
+  <p>Calendar event permissions are used to carry out calendar changes that the user explicitly approves and task exports that the user explicitly requests. Gmail access is read-only and does not send or modify email.</p>
+  <p>The Android companion captures notification snapshots from sources the user explicitly selects. These can contain sender, timestamp and message text. It forwards those snapshots to the paired PC. Notification snapshots may be incomplete and are not full SMS or chat history.</p>
+  <h2>Processing, storage and sharing</h2>
+  <p>The AI model processes captured information locally on the PC. Google user data is not sent to a hosted AI service, sold, used for advertising or used to train a generalized AI model. Motion Clone does not provide a developer-operated service that receives the user's message or calendar database.</p>
+  <p>Motion Clone communicates with Google to authenticate, read permitted data and submit approved calendar operations. The Android companion uses the user's private Tailscale connection to reach the PC. Google and Tailscale operate their own services under their respective privacy policies. Backups and exports are separate copies controlled by the user.</p>
+  <p>PC account credentials are protected using Electron's operating-system encryption, which uses Windows DPAPI on Windows. Android credentials use Android Keystore-backed encryption. The local application database is not encrypted by Motion Clone; protection of the PC account, filesystem and backups remains important.</p>
+  <h2>Retention</h2>
+  <p>Routine PC cleanup removes captured message bodies older than 30 days and conversations older than 90 days. Dismissed suggestions become eligible for cleanup after 90 days; associated records can delay their removal. Message metadata, cached events, pending suggestions and reviewed event history can remain until cleared. Calendar changes already made remain with the calendar provider.</p>
+  <p>The companion retains a bounded queue and deduplication records for up to 30 days and 10,000 records. Acknowledged delivered bodies are removed. Expiry or queue overflow can remove undelivered records and is reported in aggregate.</p>
+  <h2>Your controls</h2>
+  <p>You can pause monitoring, disconnect an account, revoke Motion Clone's Google access in your Google Account, or disable Android notification access and deselect phone sources.</p>
+  <p>Settings includes Clear retained assistant data. This clears current assistant conversations, captured content and metadata, suggestions, imported assistant archives and decision history, and cancels queued approvals. Hashed fingerprints remain to prevent replay. Unresolved calendar writes retain limited identifiers and intended event details for read-only reconciliation. The control does not delete your provider data, tasks, classes, calendar events, connections, credentials, paired devices, separately exported copies or backups. Manage those separately.</p>
+  <h2>Google API Services</h2>
+  <p>Motion Clone's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+  <h2>Website and contact</h2>
+  <p>This informational website does not receive your Motion Clone database, calendar contents or messages. Its hosting provider may process normal web request information under its own policy.</p>
+  <p>Project contact: <a href="https://github.com/DevonTheDev">DevonTheDev on GitHub</a>. Do not post private messages, credentials or account data publicly.</p>
+  <p><a href="index.html">Motion Clone homepage</a></p>
+</main>
+</html>
